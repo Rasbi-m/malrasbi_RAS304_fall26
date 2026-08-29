@@ -1,34 +1,47 @@
 ---
 title: Welcome
-tags:
-- tag1
-- tag2
----
-<center>
-<font size= "6">(Your Name) Datasheet</font><br>
-as part of<br>
-<font size= "8"> Project Name</font><br>
-for<br>
-<font size= "5"> Team ### </font><br>
 
-**Submission: month, DD, YYYY**
+tags:
+  - RAS 304
+  - Datasheet
+---
+
+<center>
+
+<font size="6">Mohammed Al Rasbi Datasheet</font><br>
+
+as part of<br>
+
+<font size="8">Project Name</font><br>
+
+for<br>
+
+<font size="5">Team ###</font><br>
+
+**Submission: August 28, 2026**
+
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+Welcome to my individual RAS 304 datasheet. This website documents my work throughout the course, including the design process, calculations, component selection, testing, and development of the team project.
+
+The purpose of this datasheet is to provide a record of my individual work and contributions to the project as it develops throughout the semester.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
+The project will involve the design and development of an embedded system as part of RAS 304. This section will be updated as the project requirements, objectives, and design are established.
 
+My individual work will contribute to the overall team project through the design, development, documentation, and testing tasks assigned to me.
+
+Additional information about the complete project will be available in the [Team Report](TEAM_REPORT_LINK).
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+This section documents my individual contributions to the team project. As the project progresses, I will update this datasheet with my design work, calculations, component selections, testing results, and other assigned responsibilities.
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+The different sections of this datasheet provide detailed documentation of my work throughout the project.
 
-For all the sections
+For example, components and materials used in my portion of the project will be documented in the **BOM (Bill of Materials)** section.
+
+This page and the rest of the datasheet will continue to be updated throughout the semester as the project develops.
