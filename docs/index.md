@@ -1,47 +1,27 @@
 ---
-title: Welcome
-
-tags:
-  - RAS 304
-  - Datasheet
+title: Mohammed Al Rasbi
 ---
 
-<center>
+# Interpretation Board
 
-<font size="6">Mohammed Al Rasbi Datasheet</font><br>
+**Mohammed Al Rasbi | Team 105 | RAS 304**
 
-as part of<br>
+Our project is a handheld LiDAR device intended to help visually impaired users notice nearby obstacles through sound and vibration. The enclosure is inspired by a portal gun. My interpretation board receives range information from the data-collection board and controls a warning speaker and a small vibration motor in the grip.
 
-<font size="8">Project Name</font><br>
+## My contribution
 
-for<br>
+I am responsible for the interpretation controller, audio output, vibration output, and their local power circuitry. The main motor that rotates the LiDAR belongs to the scanning subsystem.
 
-<font size="5">Team ###</font><br>
+- [Individual block diagram](01-Block-Diagram/Block-Diagram.md)
+- [Component selection and proposed MCC configuration](02-Component-Selection/Component-Selection.md)
+- [Bill of materials](03-BOM/BOM.md)
+- [Schematic and project downloads](04-Schematic/schematic.md)
+- [Estimated power budget](05-Power-Budget/Power-Budget.md)
 
-**Submission: August 28, 2026**
+## Current design
 
-</center>
+The design uses a PIC18F57Q43 Curiosity Nano, PAM8302 speaker amplifier, DRV2605L vibration driver, and a local 5 V regulator. The documentation follows simplified schematic revision D-simple.
 
-## Introduction
+Current figures are estimates and controller settings are proposed. Hardware testing and an actual MCC project have not been completed. Team UART levels, data format, and available supply current still need confirmation.
 
-Welcome to my individual RAS 304 datasheet. This website documents my work throughout the course, including the design process, calculations, component selection, testing, and development of the team project.
-
-The purpose of this datasheet is to provide a record of my individual work and contributions to the project as it develops throughout the semester.
-
-### Project Summary
-
-The project will involve the design and development of an embedded system as part of RAS 304. This section will be updated as the project requirements, objectives, and design are established.
-
-My individual work will contribute to the overall team project through the design, development, documentation, and testing tasks assigned to me.
-
-Additional information about the complete project will be available in the [Team Report](TEAM_REPORT_LINK).
-
-### My Contribution
-
-This section documents my individual contributions to the team project. As the project progresses, I will update this datasheet with my design work, calculations, component selections, testing results, and other assigned responsibilities.
-
-The different sections of this datasheet provide detailed documentation of my work throughout the project.
-
-For example, components and materials used in my portion of the project will be documented in the **BOM (Bill of Materials)** section.
-
-This page and the rest of the datasheet will continue to be updated throughout the semester as the project develops.
+[Team 105 project website](https://ras304-f26-105.github.io/RAS304-F26-105/)

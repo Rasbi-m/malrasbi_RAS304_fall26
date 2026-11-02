@@ -1,28 +1,41 @@
 ---
 title: Bill of Materials
-tags:
-- tag1
-- tag2
 ---
 
-## Overview
-written context
+## Interpretation board
 
-## Bill of Materials Example (as Table)
+This list follows simplified schematic revision D-simple. Quantities are one per reference below; repeated values appear on separate rows. Purchased driver modules include their onboard support components. Prices and final PCB footprints remain to be confirmed.
 
-*Table ##: An example of one approach to adding your BOM table to this section.*
+| Reference | Component / value |
+|---|---|
+| J1 | 9-12 V IN |
+| F1 | 500 mA |
+| D1 | 1N5819 |
+| U1 | LM7805CT |
+| C1 | 330nF / 25V |
+| C2 | 47uF / 25V |
+| C3 | 100nF / 16V |
+| C4 | 100uF / 16V |
+| U2 | PIC18F57Q43 Nano |
+| C5 | 100nF / 16V |
+| J2 | UART IN |
+| J3 | UART OUT |
+| R1 | 1k |
+| D2 | GREEN |
+| R4 | 22k |
+| R5 | 1k |
+| C8 | 47nF / 16V |
+| R6 | 1k |
+| C9 | 47nF / 16V |
+| U3 | PAM8302 module |
+| R7 | 470R |
+| C10 | 100nF / 16V |
+| LS1 | 8 ohm / 1 W |
+| U4 | DRV2605L QT module |
+| C11 | 100nF / 16V |
+| R8 | 10k |
+| M1 | 3 V vibration motor |
 
-| **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
-|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
+The speaker and vibration motor are external loads. The board also needs the regulator heatsink and suitable input fuse clips. Confirm physical connector and module footprints before PCB layout.
 
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
-
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
-
-## Bill of Materials Example (as Image)
-![](BOM-Screenshot.png){style width: "2000"}
-**Figure 2:** Example Bill of Materials as a screenshot.
-
-As you can see, the text can be difficult to read without opening the image.
+[Component choices](../02-Component-Selection/Component-Selection.md) | [Schematic and complete BOM CSV in KiCad ZIP](../04-Schematic/Mohammed-Interpretation-KiCad.zip)

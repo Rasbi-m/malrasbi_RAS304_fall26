@@ -1,6 +1,6 @@
 site_name: RAS 304 Mohammed Al Rasbi Data Sheet
-site_url: https://ras-embedded-systems.github.io/RAS304DataSheetTemplate/
-repo_url: https://github.com/ras-embedded-systems/RAS304DataSheetTemplate
+site_url: https://rasbi-m.github.io/malrasbi_RAS304_fall26/
+repo_url: https://github.com/rasbi-m/malrasbi_RAS304_fall26
 edit_uri: edit/main/docs/
 theme:
   name: material
@@ -58,11 +58,19 @@ extra_javascript:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2025 team-name-here"
+copyright: "Copyright &copy; 2026 Mohammed Al Rasbi"
 
 extra:
   generator: false
   social:
     - icon: fontawesome/regular/file-code
-      link: /2025_fall
-      name: 2023 Site    
+      link: https://ras304-f26-105.github.io/RAS304-F26-105/
+      name: Team 105
+
+nav:
+  - Home: index.md
+  - Block Diagram: 01-Block-Diagram/Block-Diagram.md
+  - Component Selection: 02-Component-Selection/Component-Selection.md
+  - Bill of Materials: 03-BOM/BOM.md
+  - Schematic: 04-Schematic/schematic.md
+  - Power Budget: 05-Power-Budget/Power-Budget.md

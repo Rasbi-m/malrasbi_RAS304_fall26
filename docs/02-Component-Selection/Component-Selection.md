@@ -6,7 +6,7 @@ title: Component Selection
 
 **Mohammed Al Rasbi - Interpretation Board**
 
-Prices checked October 21, 2026 (USD, quantity one; tax and shipping excluded).
+Prices and availability below are historical notes from October 21, 2026 (USD, quantity one; tax and shipping excluded), not current purchase quotes.
 
 ## Audio amplifier
 
@@ -74,6 +74,37 @@ Prices checked October 21, 2026 (USD, quantity one; tax and shipping excluded).
 
 **Choice:** 7805-based local linear regulator circuit
 
-**Rationale:** The 7805 is inexpensive, easy to solder, and supports the required local linear-regulator approach. This choice depends on Jose supplying at least 7 V under load; confirm that input and calculate heatsink requirements before building.
+**Rationale:** The 7805 is inexpensive, easy to solder, and supports the required local linear-regulator approach. The current schematic assumes a 9-12 V input from Jose. Confirm the voltage under load and use the power budget to size the heatsink.
 
 *Product photos and specifications: linked supplier pages.*
+
+## Controller and product requirements
+
+The PIC18F57Q43 Curiosity Nano provides the controller and programming interface for this subsystem. The speaker and vibration motor support nonvisual obstacle alerts, and the small modules fit the handheld concept. The DRV2605L uses I2C; the rotating LiDAR motor is not driven by this board.
+
+The selected Adafruit 2305 is the QT revision with onboard I2C pull-ups. The amplifier and haptic module are powered from the local 5 V rail. The motor's nominal 3 V setting is configured in the driver. The speaker power target for the estimated budget is 0.25 W, below its 1 W rating.
+
+## Proposed MCC configuration
+
+**Planning configuration only.** An MCC project has not been generated or tested. Match these signals in the PIC18F57Q43 MCC pin manager and verify peripheral pin selection before generating code.
+
+| Function | PIC port | Nano connector pin | Proposed configuration |
+|---|---|---:|---|
+| UART receive from collection board | RC3 | 8 | UART RX, digital input; proposed 9600 baud, 8 data bits, no parity, 1 stop bit. Agree with Khun. |
+| Optional UART forwarding | RC2 | 7 | UART TX, digital output; same framing. No destination assigned yet. |
+| Haptic clock | RB1 | 10 | I2C SCL, proposed 100 kHz, open-drain configuration. |
+| Haptic data | RB2 | 9 | I2C SDA, bidirectional/open-drain configuration. |
+| Audio output | RB0 | 46 | PWM output; proposed carrier at least 62.5 kHz with audio duty-cycle modulation. |
+| Amplifier enable | RB3 | 47 | Digital output, start low to mute amplifier. |
+| Status LED | RD0 | 20 | Digital output, start low. |
+| Board power | VTG | 51 | External regulated 5 V. |
+| Disable onboard regulator | VOFF | 55 | Grounded in the schematic. |
+| Ground | GND | 15, 24, 33, 42, 52 | Common ground. |
+
+Propose a 32 MHz internal system clock and a timer for alert scheduling. Disable analog input mode on digital signal pins. Configure UART, I2C, PWM and GPIO through MCC, checking that each selected peripheral can route to the required pin. The ADC is not required by this design. Leave the board's USB VBUS carrier pin unused.
+
+Initialize the DRV2605L at I2C address 0x5A for the 3 V ERM motor and calibrate it. Receive and validate range packets, choose an alert state, then update audio and vibration. Detect missing or invalid data separately from a clear path; timeout and distance thresholds must be agreed and tested.
+
+[Microchip Nano hardware guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) |
+[DRV2605L pinout](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/pinouts) |
+[Estimated power budget](../05-Power-Budget/Power-Budget.md)
