@@ -108,3 +108,7 @@ Initialize the DRV2605L at I2C address 0x5A for the 3 V ERM motor and calibrate 
 [Microchip Nano hardware guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) |
 [DRV2605L pinout](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/pinouts) |
 [Estimated power budget](../05-Power-Budget/Power-Budget.md)
+
+## Purchased substitutions - November 2, 2026
+
+The purchased speaker is Same Sky CMS-30204-18L250 (8 ohm, 1 W), replacing backordered Adafruit 3923. The purchased regulator is ST L7805CV, replacing backordered TI LM7805CT/NOPB. These purchased choices supersede the earlier selections above. See the [BOM](../03-BOM/BOM.md).

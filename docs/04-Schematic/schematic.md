@@ -41,3 +41,7 @@ The schematic's intended connections were checked programmatically. Native KiCad
 - [Microchip Nano hardware guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf)
 - [PAM8302 connections](https://learn.adafruit.com/adafruit-pam8302-mono-2-5w-class-d-audio-amplifier/pinouts)
 - [DRV2605L connections](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/pinouts)
+
+## Purchased substitutions - November 2, 2026
+
+Revision E-purchased uses ST L7805CV and Same Sky CMS-30204-18L250 because the original regulator and speaker were backordered. Wiring is unchanged. See the [purchase record and BOM](../03-BOM/BOM.md).

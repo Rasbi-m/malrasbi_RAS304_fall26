@@ -20,7 +20,7 @@ I am responsible for the interpretation controller, audio output, vibration outp
 
 ## Current design
 
-The design uses a PIC18F57Q43 Curiosity Nano, PAM8302 speaker amplifier, DRV2605L vibration driver, and a local 5 V regulator. The documentation follows simplified schematic revision D-simple.
+The design uses a PIC18F57Q43 Curiosity Nano, PAM8302 speaker amplifier, DRV2605L vibration driver, and a local 5 V regulator. The documentation follows simplified schematic revision E-purchased.
 
 Current figures are estimates and controller settings are proposed. Hardware testing and an actual MCC project have not been completed. Team UART levels, data format, and available supply current still need confirmation.
 
