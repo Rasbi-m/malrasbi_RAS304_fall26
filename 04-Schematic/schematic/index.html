@@ -502,6 +502,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schematic
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -518,6 +536,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grouped-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouped schematic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fully-wired-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fully wired schematic
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -597,6 +656,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grouped-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouped schematic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fully-wired-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fully wired schematic
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -631,9 +720,14 @@
 <h1 id="schematics">Schematics</h1>
 <p>Mohammed Al Rasbi | Team 105 | Interpretation board</p>
 <p>The Nano receives distance data over UART and controls the speaker amplifier and vibration driver. The power section supplies 5 V to the controller and drivers.</p>
-<p><img alt="Interpretation board schematic" src="../Schematic.png" /></p>
-<p><a href="../Schematic.pdf">Download the schematic PDF</a></p>
-<p><a href="../../06-PCB-Design/Project.zip">Download the editable KiCad project</a></p>
+<h2 id="grouped-schematic">Grouped schematic</h2>
+<p>This one-page layout groups the power supply, Nano controller, data and expansion connectors, audio output, vibration output, and indicators into separate sections. Matching labels connect the sections electrically.</p>
+<p><img alt="Grouped interpretation board schematic" src="../Grouped-Schematic.png" /></p>
+<p><a href="../Grouped-Schematic.pdf">Download the grouped schematic PDF</a> | <a href="../Grouped-KiCad.zip">Download the grouped KiCad schematic project</a></p>
+<h2 id="fully-wired-schematic">Fully wired schematic</h2>
+<p>This layout shows the original wiring between the board's sections.</p>
+<p><img alt="Fully wired interpretation board schematic" src="../Schematic.png" /></p>
+<p><a href="../Schematic.pdf">Download the fully wired schematic PDF</a> | <a href="../../06-PCB-Design/Project.zip">Download the PCB and original KiCad project</a></p>
 
 
 
