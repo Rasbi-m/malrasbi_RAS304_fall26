@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../static/logo304.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
             
 
     
@@ -554,24 +554,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PCB Design
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -588,58 +570,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#front-copper-and-silkscreen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Front copper and silkscreen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#back-copper-and-silkscreen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Back copper and silkscreen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manufacturing-check" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Manufacturing check
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -664,47 +594,6 @@
   
     
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#front-copper-and-silkscreen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Front copper and silkscreen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#back-copper-and-silkscreen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Back copper and silkscreen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manufacturing-check" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Manufacturing check
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -739,17 +628,33 @@
 
 <h1 id="pcb-design">PCB Design</h1>
 <p>Mohammed Al Rasbi | Team 105 | Interpretation board</p>
-<p>The 100 mm x 100 mm two-layer PCB uses a PIC18F57Q43 Curiosity Nano to convert distance data into speaker and vibration alerts. KiCad reported zero design-rule violations and zero unconnected pads.</p>
-<h2 id="front-copper-and-silkscreen">Front copper and silkscreen</h2>
-<p><img alt="Front PCB layout" src="Front.png" /></p>
-<p><a href="Front.pdf">Front layout PDF</a></p>
-<h2 id="back-copper-and-silkscreen">Back copper and silkscreen</h2>
-<p><img alt="Back PCB layout" src="Back.png" /></p>
-<p><a href="Back.pdf">Back layout PDF</a></p>
-<p><a href="AlRasbi_Mohammed_Team105.zip">Gerber and drill files</a> | <a href="Project.zip">Editable KiCad project</a></p>
-<h2 id="manufacturing-check">Manufacturing check</h2>
-<p>The JLCDFM report dated November 17, 2026 shows zero red errors and five orange warnings. These comprise two through-hole/SMD spacing warnings, one silkscreen line-width warning, and two warnings associated with the non-plated drill file.</p>
-<p><a href="AlRasbi_Mohammed_DFM.pdf">Download the complete JLCDFM report</a></p>
+<p>The 100 × 100 mm, two-layer board uses a PIC18F57Q43 Curiosity Nano to turn distance data into sound and vibration. The November 20 footprint revision updates the connector and regulator drills, LED pads, and heatsink clearance.</p>
+<table>
+<thead>
+<tr>
+<th>Front copper and silkscreen</th>
+<th>Back copper and silkscreen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Front PCB layout" src="Front.png" /></td>
+<td><img alt="Back PCB layout" src="Back.png" /></td>
+</tr>
+<tr>
+<td><a href="Front.pdf">Front PDF</a></td>
+<td><a href="Back.pdf">Back PDF</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="AlRasbi_Mohammed_Team105.zip">Gerbers and drill files</a></li>
+<li><a href="Project.zip">Editable KiCad project</a></li>
+<li><a href="PCB-1to1-Fit.pdf">Printable 1:1 fit sheet</a></li>
+<li><a href="DigiKey-Order-List.csv">One-board DigiKey order list</a></li>
+</ul>
+<p>KiCad reports zero DRC violations, zero unconnected items, zero schematic-to-PCB discrepancies, and zero schematic ERC messages. <a href="DRC.rpt">DRC report</a> · <a href="ERC.rpt">ERC report</a></p>
+<p>Run a new manufacturer DFM check on the Gerber ZIP above. The <a href="AlRasbi_Mohammed_DFM.pdf">November 17 JLCDFM report</a> documents the preceding revision.</p>
 
 
 
