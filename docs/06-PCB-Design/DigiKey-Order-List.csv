@@ -1,0 +1,24 @@
+﻿References,Quantity to order,Part,Manufacturer part number,DigiKey part number,DigiKey URL
+U3,1,PAM8302 audio amplifier module,2130,1528-2130-ND,https://www.digikey.com/en/products/detail/adafruit-industries-llc/2130/5761279
+U4,1,Adafruit DRV2605L STEMMA QT module,2305,1528-1346-ND,https://www.digikey.com/en/products/detail/adafruit-industries-llc/2305/5356831
+LS1,1,"8 ohm, 1 W speaker with stripped wires",CMS-30204-18L200,2223-CMS-30204-18L200-ND,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-30204-18L200/29778289
+M1,1,ERM vibration motor,1201,1528-1177-ND,https://www.digikey.com/en/products/detail/adafruit-industries-llc/1201/5353637
+U1,1,5 V linear regulator,L7805CV,497-1443-5-ND,https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964
+D1,1,"1 A, 40 V Schottky diode",1N5819-E3/54,1N5819-E3/54GICT-ND,https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/1N5819-E3-54/1023527
+F1,1,500 mA slow-blow fuse,0218.500MXP,F1742-ND,https://www.digikey.com/en/products/detail/littelfuse-inc/0218-500MXP/777592
+J1,1,2-pin power header,PEC02SAAN,35-PEC02SAAN-ND,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PEC02SAAN/859155
+"J2, J4",2,Keyed 8-pin header,0702460801,23-0702460801-ND,https://www.digikey.com/en/products/detail/molex/0702460801/760165
+"D2, D3, D4",3,Green indicator LED,LTST-C170KGKT,160-1414-1-ND,https://www.digikey.com/en/products/detail/liteon/LTST-C170KGKT/386776
+"R1, R2, R3, R5, R6",5,"1 kohm, 1%, 0.25 W resistor",RC1206FR-071KL,311-1.00KFRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC1206FR-071KL/728387
+R4,1,"22 kohm, 1%, 0.25 W resistor",AC1206FR-0722KL,YAG3846CT-ND,https://www.digikey.com/en/products/detail/yageo/AC1206FR-0722KL/6006695
+R7,1,"470 ohm, 1%, 0.25 W resistor",RC1206FR-07470RL,311-470FRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC1206FR-07470RL/728934
+R8,1,"10 kohm, 1%, 0.25 W resistor",RC1206FR-0710KL,311-10.0KFRCT-ND,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430
+C1,1,"330 nF, 50 V, X7R, 10% capacitor",CC0805KKX7R9BB334,311-1888-1-ND,https://www.digikey.com/en/products/detail/yageo/CC0805KKX7R9BB334/5195294
+C2,1,"47 uF, 25 V, 20% capacitor",EEU-FR1E470B,P15360CT-ND,https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E470B/2504098
+"C3, C5, C10, C11",4,"100 nF, 50 V, X7R, 10% capacitor",CC0805KRX7R9BB104,311-1140-1-ND,https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874
+C4,1,"100 uF, 25 V, 20% capacitor",EEU-FR1E101B,P15348CT-ND,https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E101B/2504119
+"C8, C9",2,"47 nF, 50 V, X7R, 10% capacitor",CC0805KRX7R9BB473,311-1431-1-ND,https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB473/2833596
+F1 holder,1,5 x 20 mm PCB fuse holder,0031.8201,486-1258-ND,https://www.digikey.com/en/products/detail/schurter-inc/0031-8201/669925
+U1 heatsink,1,Tab-mounted TO-220 heatsink,577102B00000G,HS106-ND,https://www.digikey.com/en/products/detail/boyd-laconia-llc/577102B00000G/108319
+"U3, U4 output pins",1,"4-pin breakaway strip, split into four single pins",PRPC004SAAN-RC,S1011EC-04-ND,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC004SAAN-RC/2775250
+U1 mount,1,TO-220 heatsink mounting kit,4880SG,4880SG-ND,https://www.digikey.com/en/products/detail/boyd-laconia-llc/4880SG/1625671
